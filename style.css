@@ -334,7 +334,7 @@ footer {
    grid-area: "footer";
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
    .socialContainer {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 3fr 2fr 1fr 1fr 1fr;
