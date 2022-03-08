@@ -14,100 +14,14 @@
 }
 
 
-#subscribe {
-   background-color: #969C7B;
-   color: #FBF7F5;
-   border-radius: 10px;
-   border-color: #969C7B;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 24px;
-   width: 550px;
-   height: 75px;
-   padding: 20px;
-   margin: 0px auto;
-}
-
-#subscribe:hover{
-   color: #FBF7F5;
-   background-color: #616C4d;
-   cursor: pointer;
-}
-
-.modalElement{
-   display: none;
-   position: fixed;
-   z-index: 1;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   overflow: auto;
-   background-color: rgba(206, 195, 175, 0.7);
-}
-
-
-
-.modal-content p{
-   font-size: 32px;}
-
-.modal-content{
-   background-color: #F4E9E2;
-   margin: 20% auto;
-   text-align: center;
-   padding: 50px;
-   width: 60%;
-   border: solid 20px #616C4D;
-}
-
-.close {
-   color: #2B3138;
-   float: right;
-   font-size: 28px;
-   font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color:#616C4D;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.emailBox {
-   margin: 0px auto;
-   text-align: center;
-   width: 75%;
-   height: 40px;
-   color: #D2D6DA;
-   background: #FFFFFF;
-   border: 1px solid #D2D6DA;
-   box-sizing: border-box;
-   border-radius: 8px;
-}
-
-#emailBtn {
-   width: 155px;
-   height: 48px;
-   background: #969C7B;
-   border-radius: 55px;
-   border-color: transparent;
-   color: #F4E9E2;
-   margin: 20px auto;
-}
-
-#emailBtn:hover {
-   background-color: #616C4D;
-   color: #FFFFFF;
-}
-
-
 .headerMenu {
    text-transform: uppercase;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color:#2B3138;
    position: relative;
-   width: 100%;
-   height: 800px;
+   /* width: 100%; */
+   height: auto;
+   min-height: 1000px;
 }
 
 .headerMenu a {
@@ -116,26 +30,31 @@
 
 .rightNavigation {
    font-size: 24px;
-   position: absolute;
+   margin-left: 100px;
    top: 10%;
    right: 5%;
    display: flex;
    flex-direction: column;
 }
 
-.rightNavigation a {
-   padding: .00005%;
-}
-
 #headerNav {
    font-size: 20px;
    font-weight: 500;
-   padding-left: 50px;
+   display: flex;
+   flex-wrap: wrap;
+	padding-right: 20px;
+	margin-left: auto;
 }
 
-#headerNav a {
-   margin-right: 50px;
+#headerNav a { 
+   margin: 70px 60px;
 }
+
+.logo-twh {
+ display: flex; 
+ margin-right: auto;
+}
+
 
 a:link {
    color: #2B3138;
@@ -149,13 +68,19 @@ a:visited {
    text-decoration: none;
 }
 
-a:hover {
-   color: #616C4D;
+.navbar a:hover {
+   color:#ffffff;
+   background-color: #616C4D;
+   text-decoration: none;
+}
+
+a:active {
+   color:#616C4D;
    background-color: transparent;
    text-decoration: underline;
 }
 
-a:active {
+.rightNavigation a:hover {
    color:#616C4D;
    background-color: transparent;
    text-decoration: underline;
@@ -190,39 +115,46 @@ p{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.heroTitle {
-   position: absolute;
-   top: 300px; 
-   left:50px;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-}
 
 .hero-image{
-   width: 1000px;
+   width: 1100px;
    position: absolute;
-   top: 0px;
+   top: 130px;
    right: 0px;
-   border-bottom-left-radius: 45%;
+   border-bottom-left-radius: 30%;
+   border-bottom-right-radius: 30%;
    margin: -30px;
    z-index: -90;
-}
+} 
 
 .heroOverlay1 {
    position: absolute;
-   top: 0px;
+   top: 110px;
    right: 0px;
-   width: 80%;
-   height: 100%;
-   margin: -30px;
-   background-image: linear-gradient(269.6deg, #E9E3DB 0.32%, rgba(231, 231, 231, 0) 77.79%), 
+   width: 75%;
+   height: 85%;
+   background-image: linear-gradient(-269.6deg, #E9E3DB 0.32%, rgba(231, 231, 231, 0) 77.79%), 
    url("images/TWH\ living\ room.jpeg");
-   border-bottom-left-radius: 200px;
+   border-bottom-left-radius: 30%;
+   border-bottom-right-radius: 30%;
    background-size: cover;
    z-index: -3;
 } 
 
+
+/* .heroOverlay2 {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   width: 1880px;
+   height: 1800px;
+   z-index: -2;
+   margin: -200px;
+   background: linear-gradient(to right, #E9E3DB 0%, rgba(231, 231, 231, 0) 100%);
+   transform: rotate(-90deg);
+   border-radius: 20% 0px 0px 0px;
+   background-size: cover;
+} */
 
 .topSidemenu {
    display: flex;
@@ -231,24 +163,109 @@ p{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+   body {
+     background-color: #FBF7F5;
+   }
+ }
+
+#subscribe {
+  background-color: #969C7B;
+  color: #FBF7F5;
+  border-radius: 10px;
+  border-color: #969C7B;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  height: 75px;
+  padding: 20px;
+  margin: 0px auto;
+}
+
+#subscribe:hover{
+  color: #FBF7F5;
+  background-color: #616C4d;
+  cursor: pointer;
+}
+
+.modalElement{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(206, 195, 175, 0.7);
+}
+
+.modal-content p{
+  font-size: 32px;}
+
+.modal-content{
+  background-color: #F4E9E2;
+  margin: 20% auto;
+  text-align: center;
+  padding: 50px;
+  width: 60%;
+  border: solid 20px #616C4D;
+}
+
+.close {
+  color: #2B3138;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+ color:#616C4D;
+ text-decoration: none;
+ cursor: pointer;
+}
+
+.emailBox {
+  margin: 0px auto;
+  width: 75%;
+  height: 40px;
+  color: #D2D6DA;
+  background: #FFFFFF;
+  border: 1px solid #D2D6DA;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#emailBtn {
+  width: 155px;
+  height: 48px;
+  background: #969C7B;
+  border-radius: 55px;
+  border-color: transparent;
+  color: #F4E9E2;
+  margin: 20px auto;
+}
+
+#emailBtn:hover {
+  background-color: #616C4D;
+}
+
 .socialContainer {
    display: grid;
-   column-gap: 10px;
-   row-gap: 10px;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
+   grid-gap: 10px;
+   padding: 10px;
    grid-template-areas: 
    'lglt lglt md md rttpsm lgrt lgrt'
    'lglt lglt md md cttpsm lgrt lgrt'
    'lglt lglt ltbtsm ctbtsm rtbtsm lgrt lgrt';
 }
 
-.socialContainer > div {
+/* .socialContainer > div {
    background-color: #969C7B;
    border-radius: 5px;
    padding: 50px 0;
    text-align: center;
-}
+} */
 
 .item1 {
    grid-area: lglt;
@@ -260,7 +277,7 @@ p{
 
 .item3 {
    grid-area: rttpsm;
-} 
+}
 
 .item4 {
    grid-area: cttpsm;
@@ -280,7 +297,7 @@ p{
 
 .item8 {
    grid-area: lgrt;
-} 
+}
 
 main {
    width: 90vw;
@@ -311,13 +328,14 @@ main {
    /* padding-top: 50px; */
    border-bottom-left-radius: 20%;
    border-top-right-radius: 20%;
-   box-shadow: 6px 5px 3px -3px #2B3138;
+   box-shadow: -5px 0px 2px -3px #2B3138;
 }
 
 #meetTeam{
    background-color: #ECD9CE;
    background-size: auto;  
    padding: 100px 100px;
+   margin-bottom: -25px;
    grid-area: "meetTeam";
 }
 
