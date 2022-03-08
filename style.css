@@ -141,21 +141,6 @@ p{
    z-index: -3;
 } 
 
-
-/* .heroOverlay2 {
-   position: absolute;
-   bottom: 0px;
-   right: 0px;
-   width: 1880px;
-   height: 1800px;
-   z-index: -2;
-   margin: -200px;
-   background: linear-gradient(to right, #E9E3DB 0%, rgba(231, 231, 231, 0) 100%);
-   transform: rotate(-90deg);
-   border-radius: 20% 0px 0px 0px;
-   background-size: cover;
-} */
-
 .topSidemenu {
    display: flex;
    justify-content: right;
@@ -259,13 +244,6 @@ p{
    'lglt lglt md md cttpsm lgrt lgrt'
    'lglt lglt ltbtsm ctbtsm rtbtsm lgrt lgrt';
 }
-
-/* .socialContainer > div {
-   background-color: #969C7B;
-   border-radius: 5px;
-   padding: 50px 0;
-   text-align: center;
-} */
 
 .item1 {
    grid-area: lglt;
