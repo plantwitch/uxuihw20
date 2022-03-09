@@ -303,7 +303,6 @@ main {
 .hat-img{
    width: 60%;
    float: right;
-
    border-bottom-left-radius: 20%;
    border-top-right-radius: 20%;
    box-shadow: -5px 0px 2px -3px #2B3138;
@@ -332,7 +331,8 @@ footer {
    bottom: 0%;
    width: 100%;
    grid-area: "footer";
-}  */
+}*/
+
 
 @media only screen and (max-width: 1200px) {
    .socialContainer {
