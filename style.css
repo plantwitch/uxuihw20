@@ -284,56 +284,6 @@ main {
   /* min-height: calc(100vh - 850px - 133px); */
 }
 
-/* .footerGrid {
-   display: grid;
-   grid-template-areas: 
-   "meetTeam"
-   "footer";
-}
-
-.footer-image{
-   width: 40%;
-   justify-content: space-evenly;
-   float:left;
-   padding-right:50px; 
-  border-radius: 20px;
-  box-shadow: -5px 0px 2px -2px #2B3138;
-}
-
-.hat-img{
-   width: 60%;
-   float: right;
-
-   border-bottom-left-radius: 20%;
-   border-top-right-radius: 20%;
-   box-shadow: -5px 0px 2px -3px #2B3138;
-}
-
-#meetTeam{
-   background-color: #ECD9CE;
-   background-size: auto;  
-   padding: 100px 100px;
-   margin-bottom: -25px;
-   grid-area: "meetTeam";
-}
-
-#meetTeam p {
-   color: #2B3138;
-   font-size: 22px;
-   font-weight: 500;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-footer {
-   text-align: center;
-   background-color: #616C4D;
-   padding: 20px; 
-   position: absolute;
-   bottom: 0%;
-   width: 100%;
-   grid-area: "footer";
-}  */
-
 @media only screen and (max-width: 1200px) {
    .socialContainer {
       grid-template-columns: 1fr 1fr 1fr;
