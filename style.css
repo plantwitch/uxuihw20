@@ -284,6 +284,7 @@ main {
   /* min-height: calc(100vh - 850px - 133px); */
 }
 
+
 @media only screen and (max-width: 1200px) {
    .socialContainer {
       grid-template-columns: 1fr 1fr 1fr;
