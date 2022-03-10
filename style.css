@@ -324,8 +324,8 @@ main {
       flex-wrap: wrap;
       
    }
-   .footerCol a{
-      font-size: 20px;
+   .footerCol p{
+      font-size: 24px;
    }
 }
 
@@ -345,6 +345,7 @@ footer{
 }
 footer p{
    color: #F4E9E2;
+   font-size: 18px;
 }
 
 .footerRow{
