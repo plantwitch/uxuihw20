@@ -324,7 +324,9 @@ main {
       flex-wrap: wrap;
       
    }
-
+   .footerCol a{
+      font-size: 20px;
+   }
 }
 
 
