@@ -28,6 +28,22 @@
    margin-top: 50px;
 }
 
+.headerSocials img{
+   width: 40px;
+   padding: 5px;
+}
+
+.headerSocials img:hover{
+   /* background-color: rgba(150, 156, 123, 0.5); */
+   background-color: #E4CABE;
+   border-radius: 5px;
+}
+
+.headerSocials {
+   display:flex;
+   justify-content: space-evenly;
+}
+
 .rightNavigation {
    font-size: 24px;
    margin-left: 100px;
@@ -295,24 +311,28 @@ main {
 
 @media only screen and (max-width: 1200px) {
    .socialContainer {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 3fr 2fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .5fr .5fr .3fr .5fr .3fr .5fr;
       grid-template-areas: 
-      'lglt lglt lglt'
-      'md md md'
-      'rttpsm cttpsm cttpsm' 
-      'lgrt lgrt lgrt' 
-      'ltbtsm ctbtsm rtbtsm';
+      'lglt lglt'
+      'md md'
+      'rttpsm cttpsm' 
+      'lgrt lgrt' 
+      'ctbtsm rtbtsm'
+      'ltbtsm ltbtsm';
       display: grid;
       flex-wrap: wrap;
+      
    }
- }
+
+}
+
 
 footer{
    width: 100%;
    position: relative;
    bottom: 0; 
-   background: linear-gradient(to right, #969C7B, #616C4D);
+   background: linear-gradient(to left, #2B3138, #616C4D);
    color: #fff;
    padding: 100px 0 30px;
    border-top-left-radius: 125px;
@@ -360,4 +380,20 @@ footer p{
    border-top-left-radius: 20%;
    border-bottom-right-radius: 20%;
    box-shadow: 6px 5px 3px -3px #2B3138;
+}
+
+.footerSocials img{
+  width: 80px;
+  padding: 10px;
+ 
+}
+
+.footerSocials img:hover{
+   background-color: #A27A6F;
+   border-radius: 5px;
+}
+
+.footerSocials {
+   display:flex;
+   justify-content: center;
 }
